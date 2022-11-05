@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="230" viewBox="0 0 500 230">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 250px;
+        text-anchor: middle;
+      }
+
+      .cls-1 {
+        font-family: "Bw Modelica";
+        font-style: italic;
+      }
+
+      .cls-2 {
+        font-family: Coolvetica;
+      }
+    </style>
+  </defs>
+  <text id="_1" data-name="1" class="cls-1" transform="translate(423.978 186.311) scale(0.805)"><tspan x="0">1</tspan></text>
+  <text id="WDC" class="cls-2" transform="translate(208.534 177.094) scale(0.652)"><tspan x="0">WDC</tspan></text>
+</svg>
