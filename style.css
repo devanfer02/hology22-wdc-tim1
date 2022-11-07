@@ -23,7 +23,6 @@
 
 
 .sidebar-menu__item{
-
   font-size: 19px;
   display: flex;
   align-items: center;
@@ -31,9 +30,10 @@
 }
 
 .sidebar-menu__item:hover{
-  background-color: #e7e7e7;
+  background-color: #00ACEE;
   border-radius: 30px;
-  transition: ease-out;
+  color:black ;
+  transition: color 100ms ease-out;
 }
 
 .sidebar-menu{
@@ -46,8 +46,6 @@
   margin-right: 20px;
 }
 
-
-
 .layout__right-sidebar{
   border-left: 1px solid #e7e7e7;
   padding: 10px;
@@ -55,6 +53,73 @@
   overflow-y: scroll, hidden;
 }
 
-.layout__main{
+.layout__main {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  
+  
   padding: 10px;
+  flex: 0.5;
+  border-right: 1px solid white;
+  min-width: fit-content;
+  overflow-y: scroll;
+}
+
+.layout__main::-webkit-scrollbar {
+  display: none;
+}
+
+.main_header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  border: 1px solid white;
+  padding: 15px 20px;
+}
+
+.main_header h2{
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.tweetBox_input img{
+  border-radius: 50%;
+  height: 40px;
+}
+
+.tweetBox_input {
+  display: flex;
+  padding: 20px;
+}
+
+.tweetBox_input input{
+  flex: 1;
+  margin-left: 20px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+
+.tweetBox  {
+  padding-bottom: 10px;
+  border-bottom: 8px solid white;
+  padding-right: 10px;
+}
+
+.tweetBox form{
+  display: flex;
+  flex-direction: column;
+}
+
+.tweetBox .tweetButton {
+  background-color: #00ACEE;
+  border: none;
+  color: white;
+  font-weight: 900 ;
+  border-radius: 30px;
+  width: 80px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: auto;
 }
