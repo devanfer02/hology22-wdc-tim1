@@ -30,9 +30,8 @@
 }
 
 .sidebar-menu__item:hover{
-  background-color: #00ACEE;
   border-radius: 30px;
-  color:black ;
+  color:#00ACEE ;
   transition: color 100ms ease-out;
 }
 
@@ -40,10 +39,14 @@
   position: fixed;
 }
 
-.sidebar-menu__item-icon{
 
+.sidebar-menu__item-icon{
   height: 26px;
   margin-right: 20px;
+}
+
+.sidebar-menu__item-icon:hover{
+  color:#00ACEE ;
 }
 
 .layout__right-sidebar{
@@ -91,6 +94,8 @@
 .tweetBox_input {
   display: flex;
   padding: 20px;
+
+  
 }
 
 .tweetBox_input input{
@@ -112,6 +117,10 @@
   flex-direction: column;
 }
 
+.tweet_main{
+  padding-left: 30px ;
+}
+
 .tweetBox .tweetButton {
   background-color: #00ACEE;
   border: none;
@@ -122,4 +131,25 @@
   height: 40px;
   margin-top: 20px;
   margin-left: auto;
+}
+
+.search_right_sidebar{
+  height: 26px;
+  width: 26px;
+  margin-right: 20px;
+}
+
+.sidebar_input{
+  display: flex;
+  background-color: rgb(197, 190, 190);
+  align-items: center;
+  padding: 10px;
+  border-top: 10px;
+  border-radius: 20px;
+}
+
+.sidebar_input input{
+  border: none;
+  background-color: rgb(197, 190, 190);
+  outline: none;
 }
