@@ -100,17 +100,17 @@ html{
 .tweetBox_input {
   display: flex;
   padding: 20px;
-
-  
 }
 
 .tweetBox_input input{
+  display: block;
   flex: 1;
   margin-left: 20px;
   font-size: 20px;
   border: none;
   outline: none;
 }
+
 
 .tweetBox  {
   padding-bottom: 10px;
@@ -155,7 +155,8 @@ html{
 }
 
 .sidebar_input input{
-  width: 100px;
+  display: block;
+  width: 100%;
   border: none;
   background-color: rgb(197, 190, 190);
   outline: none;
