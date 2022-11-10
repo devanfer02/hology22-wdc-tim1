@@ -29,6 +29,7 @@ html{
 
 
 .sidebar-menu__item{
+  font-weight: 500;
   font-size: 19px;
   display: flex;
   align-items: center;
@@ -65,8 +66,6 @@ html{
 .layout__main {
   -ms-overflow-style: none;
   scrollbar-width: none;
-  
-  
   padding: 10px;
   flex: 0.5;
   border-right: 1px solid white;
@@ -102,14 +101,23 @@ html{
   padding: 20px;
 }
 
-.tweetBox_input input{
+.tweetBox_input textarea{
+  font-family: "Roboto",sans-serif;
   display: block;
   flex: 1;
   margin-left: 20px;
   font-size: 20px;
   border: none;
   outline: none;
+  resize: none;
+  
 }
+
+textarea::-webkit-scrollbar{ 
+  width: 0px;
+  -ms-overflow-style: none;
+}
+
 
 
 .tweetBox  {
@@ -167,3 +175,4 @@ html{
   background-color: rgb(197, 190, 190);
   outline: none;
 }
+
