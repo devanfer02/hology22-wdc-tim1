@@ -139,6 +139,12 @@ html{
   margin-left: auto;
 }
 
+.tweet_main p{
+  display: flex;
+  font-size:20px;
+  padding-right: 10px;
+}
+
 .search_right_sidebar{
   height: 26px;
   width: 26px;
