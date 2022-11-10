@@ -55,10 +55,10 @@
           <form action="">
             <div class="tweetBox_input">
               <img src="./assets/icons/userpp.png" alt="img">
-              <input id="userInput" class="tweetInput" type="text" placeholder="What's happening?" >
+              <input id="userInput" class="tweetInput" type="text" placeholder="What's happening?" autocomplete="off" >
               
             </div>
-            <button class="tweetButton" onclick="tweetFunction()" type="button">Tweet</button>
+            <button id="tweetButton"class="tweetButton" onclick="tweetFunction()" type="button">Tweet</button>
           </form>
         </div>
         <div class="tweet_main">
@@ -82,8 +82,6 @@
     </div>
   </main>
   <script src="script.js">
-      
-
   </script>
 </body>
 </html>
