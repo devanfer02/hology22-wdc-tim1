@@ -9,9 +9,9 @@ const menuClick = document.querySelector("sidebar-menu__item");
 
 
 //DISPLAY USER INPUT TO HTML PAGE
-var userInput = document.getElementById("userInput");
-var tweetButton = document.getElementById('tweetButton');
-var tweet = document.getElementById('tweet');
+let userInput = document.getElementById("userInput");
+let tweetButton = document.getElementById('tweetButton');
+let tweet = document.getElementById('tweet');
 
 function tweetFunction(){
     tweet.innerHTML = userInput.value;
@@ -19,21 +19,22 @@ function tweetFunction(){
 
 tweetButton.addEventListener('click',tweetFunction);
 
+//TEXTAREA
+const textarea = document.getElementById("userInput");
+textarea.style.cssText = `height: ${textarea.scrollHeight}px; overflow-y:hidden`
+textarea.addEventListener("input", function() {
+    this.style.height = "auto";
+    this.style.height = `${this.scrollHeight}px`;
+})
+
+
 //PREVENT ENTER WIP
-userInput.addEventListener('keypress', function(event) {
-    if(event.key === "Enter"){
+userInput.addEventListener('keypress', event => {
+    event.preventDefault;
+    if(event.key === 'Enter'){
+        console.log('ENTER KENA KNTL');
         event.preventDefault;
         document.getElementById('tweetButton').click();
     }  
-    if(event.key === "enter"){
-        event.preventDefault;
-        document.getElementById('tweetButton').click();
-    }
-    if(event.key === "ENTER"){
-        event.preventDefault;
-        document.getElementById('tweetButton').click();
-    }
+    
 })
-
-menuClick.addEvent
-
